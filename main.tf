@@ -34,7 +34,7 @@ resource "newrelic_nrql_alert_condition" "apdex_condition" {
   nrql {
     query             = "SELECT apdex(duration, t: ${var.apdex_t}) FROM Transaction WHERE appName = '${var.application_name}' AND accountId = ${var.account_id}"
     evaluation_offset = 3
-  }
+  } 
 }
 
 resource "newrelic_nrql_alert_condition" "error_rate_condition" {
