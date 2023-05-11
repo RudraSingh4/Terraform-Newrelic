@@ -6,7 +6,7 @@ terraform {
       source  = "newrelic/newrelic"
     #   version = "~> 2.21"
     }
-  }
+  } 
 }
 # Configure the New Relic provider
 provider "newrelic" {

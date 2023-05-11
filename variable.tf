@@ -7,7 +7,7 @@ variable "application_name" {
   type        = string
   default= "Rudra"
 }
-
+ 
 variable "account_id" {
   description = "The account ID the application reports to"
   type        = number
